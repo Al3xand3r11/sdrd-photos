@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,27 +14,27 @@ export default function Home() {
           height={100}
           priority
         />
-        <div className="flex flex-col mt-6">
-          <button className="border mb-4 rounded-xl">
+        <div className="flex flex-col mt-6 text-center">
+          <Link className="border mb-4 rounded-xl" href="/upload">
             Upload Photos
-          </button>
-          <button className="border rounded-xl">
+          </Link>
+          <Link className="border rounded-xl" href="/view">
             View Photos
-          </button>
+          </Link>
         </div>
           </div>
     
         </div>
         
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a>
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center underline">
+        <a href="https://www.instagram.com/sundayrunday_la/">
           Instagram
         </a>
-        <a>
+        <a href="https://www.sundayrundayla.com/">
           Website
         </a>
-        <a>
+        <a href="https://www.strava.com/clubs/sundayrundayla">
           Strava
         </a>
       </footer>
